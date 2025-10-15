@@ -1,3 +1,13 @@
+<?php
+// importando a classe Cliente 
+require_once "src/Cliente.php";
+
+$ClienteA = new Cliente();
+$ClienteB = new Cliente();
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -10,5 +20,8 @@
     <hr>
 
     <h2>Trabalhando com classes e objetos</h2>
+
+    <h3>Visualizando a estrutura dos objetos</h3>
+    <pre><?=var_dump($ClienteA, $ClienteB)?></pre>
 </body>
 </html>
