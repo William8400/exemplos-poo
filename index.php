@@ -2,8 +2,15 @@
 // importando a classe Cliente 
 require_once "src/Cliente.php";
 
+// Criando objetos(ou instâncias) à partir da Classe
 $ClienteA = new Cliente();
 $ClienteB = new Cliente();
+
+// Atribuindo valores ao objetos $ClienteA
+$ClienteA->nome = "William";
+$ClienteA->idade = 21;
+$ClienteA->email = "arroba@gmail.com";
+
 
 
 ?>
