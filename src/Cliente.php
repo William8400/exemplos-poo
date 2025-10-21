@@ -8,7 +8,9 @@ class Cliente {
     public string $email;
 
     /* Método responsável por exibir os dados de um objeto */
-    public function mostrarDados(){
+
+    // Usamos void para sinalizar que o método não tem return
+    public function mostrarDados():void{
         /* exibindo os dados usando this = atributo desejado */
         echo "<div>
                 <h4> Nome: $this->nome </h4> 
