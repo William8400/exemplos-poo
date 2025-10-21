@@ -21,6 +21,5 @@ require_once "src/Cliente.php";
     
 
     <h3>Visualizando a estrutura dos objetos</h3>
-    <pre><?=var_dump($ClienteA, $ClienteB)?></pre>
 </body>
 </html>
