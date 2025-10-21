@@ -12,7 +12,6 @@ $ClienteA->idade = 21;
 $ClienteA->email = "arroba@gmail.com";
 
 
-
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
