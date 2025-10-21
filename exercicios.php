@@ -39,7 +39,6 @@ $Livro3->quantidade = 3;
 
     <details>
 
-
         <summary>
             Livro 1
         </summary>
@@ -49,6 +48,7 @@ $Livro3->quantidade = 3;
             <li><b>Quantidade:</b><?= $Livro1->quantidade ?></li>
         </ul>
     </details>
+    
     <hr>
 
     <details>
