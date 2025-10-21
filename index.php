@@ -41,6 +41,7 @@ $ClienteB->email = "magnus@gmail.com"
     <!-- Primeira versão (acessando direto) -->
     <hr>
     <h4>Cliente A</h4>
+    <!-- usamos a "->" para mostrar o que tem dentro de um objeto -->
     <ul>
         <li><b>Nome:</b> <?=$ClienteA->nome?> </li>
         <li><b>Idade:</b> <?=$ClienteA->idade?> </li>
