@@ -27,19 +27,21 @@ $Livro3->quantidade = 3;
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Livros</title>
 </head>
 
 <body>
 
     <h1>Livros Do Harry Potter</h1>
+
     <hr>
 
     <details>
-        
-    
+
+
         <summary>
-            Livro 1 
+            Livro 1
         </summary>
 
         <ul>
@@ -48,11 +50,11 @@ $Livro3->quantidade = 3;
         </ul>
     </details>
     <hr>
-    
+
     <details>
-        
+
         <summary>
-             Livro 2 
+            Livro 2
         </summary>
 
         <ul>
@@ -60,11 +62,11 @@ $Livro3->quantidade = 3;
             <li><b>Quantidade:</b><?= $Livro2->quantidade ?></li>
         </ul>
     </details>
-    
+
     <hr>
     <details>
         <summary>
-           Livro 3 
+            Livro 3
         </summary>
 
         <ul>
