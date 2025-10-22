@@ -2,9 +2,9 @@
 
 require_once "src/Livro.php";
 
-$Livro1 = new Livro("Harry Potter e a Pedra filosofal", "J.K. Rowling", 7);
+$Livro1 = new Livro("Harry Potter e a Pedra filosofal", "J.K. Rowling", 23);
 
-$Livro2 = new Livro("Harry Potter e a Câmara Secreta", "J.K. Rowling", 8);
+$Livro2 = new Livro("Harry Potter e a Câmara Secreta", "J.K. Rowling", 56);
 
 $Livro3 = new Livro( "Harry Potter e o Prisioneiro de Askaban", "J.K. Rowling" , 3);
 
@@ -43,7 +43,7 @@ $Livro3->verificarTitulo();
         </summary>
         <ul>
             <li><b>Titulo:</b><?= $Livro1->titulo ?></li>
-            <li><b>Quantidade:</b><?= $Livro1->quantidade ?></li>
+            <li><b>Quantidade:</b><?= $Livro1->quantidade ?? "não tem quantidade"?></li>
         </ul>
     </details>
 
@@ -57,7 +57,7 @@ $Livro3->verificarTitulo();
 
         <ul>
             <li><b>Titulo:</b><?= $Livro2->titulo ?></li>
-            <li><b>Quantidade:</b><?= $Livro2->quantidade ?></li>
+            <li><b>Quantidade:</b><?= $Livro2->quantidade ?? "número de quantidade não informado"?></li>
         </ul>
     </details>
 
@@ -69,7 +69,8 @@ $Livro3->verificarTitulo();
 
         <ul>
             <li><b>Titulo:</b><?= $Livro3->titulo ?></li>
-            <li><b>Quantidade:</b><?= $Livro3->quantidade ?></li>
+        <!-- o ?? é como se fosse um if sozinho -->
+            <li><b>Quantidade:</b><?= $Livro3->quantidade  ?? "número de quantidade não informado"?></li>
         </ul>
     </details>
     <hr>
