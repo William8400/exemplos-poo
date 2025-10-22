@@ -1,23 +1,35 @@
 <?php
 class Cliente {
-    public string $nome;
-    public int $idade;
-    public string $email;
 
-    // Telefone é opcional, ou seja, caso não seja informado ficará valendo null 
-    public ?string $telefone; // ? indica que este atributo PODE ser NULL
+    /* Atributos privados NÃO PODEM SER ACESSADOS/MODIFICADOS fora da própria classe em que estão declarados */
+    private string $nome;
+    private int $idade;
+    private string $email;
 
-    /* Método construtor: responsável por 'construir' um objeto COM seus dados no momento da criação */
-
+    private ?string $telefone; 
+    
     public function __construct( 
         string $valorDoNome, 
         int $valorDaIdade, 
         string $valorDoEmail, 
-        ?string $valorDoTelefone = null) // null como valor padrão
+        ?string $valorDoTelefone = null) 
     {
         $this->nome = $valorDoNome;
         $this->idade = $valorDaIdade;
         $this->email = $valorDoEmail;
         $this->telefone = $valorDoTelefone;
+    }
+
+    /* Metódos getters: permite acesso APENAS para leitura  */
+    public function getNome():string{
+        return $this->nome;
+    }
+
+    public function getEmail():string{
+        return $this->email;
+    }
+
+    public function getIdade():int{
+        return $this->idade;
     }
 }
