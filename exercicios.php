@@ -2,25 +2,15 @@
 
 require_once "src/Livro.php";
 
-$Livro1 = new Livro("Harry Potter e a Pedra Filosofal", "J.K. Rowling", 7);
+$Livro1 = new Livro("Harry Potter e a Pedra filosofal", "J.K. Rowling", 7);
 
 $Livro2 = new Livro("Harry Potter e a Câmara Secreta", "J.K. Rowling", 8);
 
-$Livro3 = new Livro();
+$Livro3 = new Livro( "Harry Potter e o Prisioneiro de Askaban", "J.K. Rowling" , 3);
 
-$Livro1->titulo = "Harry Potter e a Pedra Filosofal";
-$Livro1->autor = "J.K. Rowling";
-$Livro1->quantidade = 7;
+$Livro1->verificarTitulo();
 
-$Livro2->titulo = "Harry Potter e a Câmara Secreta";
-$Livro2->autor = "J.K. Rowling";
-$Livro2->quantidade = 8;
-
-$Livro3->titulo = "Harry Potter e o Prisioneiro de Askaban";
-$Livro3->autor = "J.K. Rowling";
-$Livro3->quantidade = 3;
 ?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -80,6 +70,8 @@ $Livro3->quantidade = 3;
         </ul>
     </details>
     <hr>
+
+    <pre><?=var_dump($Livro1, $Livro2, $Livro3)?></pre>
 
 </body>
 
