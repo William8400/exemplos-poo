@@ -11,3 +11,7 @@ header {
     background-color: azure;
     border-radius: 10px;
 }
+
+details {
+    cursor: pointer;
+}
