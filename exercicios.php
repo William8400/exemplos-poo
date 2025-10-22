@@ -10,6 +10,10 @@ $Livro3 = new Livro( "Harry Potter e o Prisioneiro de Askaban", "J.K. Rowling" ,
 
 $Livro1->verificarTitulo();
 
+$Livro2->verificarTitulo();
+
+$Livro3->verificarTitulo();
+
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -37,7 +41,6 @@ $Livro1->verificarTitulo();
         <summary>
            <b>Livro 1 :</b>
         </summary>
-
         <ul>
             <li><b>Titulo:</b><?= $Livro1->titulo ?></li>
             <li><b>Quantidade:</b><?= $Livro1->quantidade ?></li>
@@ -71,7 +74,7 @@ $Livro1->verificarTitulo();
     </details>
     <hr>
 
-    <pre><?=var_dump($Livro1, $Livro2, $Livro3)?></pre>
+    
 
 </body>
 
