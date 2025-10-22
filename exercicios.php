@@ -33,14 +33,20 @@ $Livro3->quantidade = 3;
 
 <body>
 
-    <h1>Livros Do Harry Potter</h1>
+    <header>
+
+        <p><b>Livros Do Harry Potter</b></p>
+
+
+    </header>
+
 
     <hr>
 
     <details>
 
         <summary>
-            Livro 1
+           <b>Livro 1 :</b>
         </summary>
 
         <ul>
@@ -48,13 +54,13 @@ $Livro3->quantidade = 3;
             <li><b>Quantidade:</b><?= $Livro1->quantidade ?></li>
         </ul>
     </details>
-    
+
     <hr>
 
     <details>
 
         <summary>
-            Livro 2
+            <b>Livro 2 :</b>
         </summary>
 
         <ul>
@@ -66,7 +72,7 @@ $Livro3->quantidade = 3;
     <hr>
     <details>
         <summary>
-            Livro 3
+            <b>Livro 3 :</b>
         </summary>
 
         <ul>

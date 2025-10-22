@@ -5,6 +5,9 @@
     border-radius: 17px;
 }
 
-h1 {
+header {
     text-align: center;
+    border: 1px solid black;
+    background-color: azure;
+    border-radius: 10px;
 }
