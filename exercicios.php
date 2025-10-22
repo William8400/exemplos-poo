@@ -7,13 +7,6 @@ $Livro1 = new Livro("Harry Potter e a Pedra filosofal", "J.K. Rowling", 23);
 $Livro2 = new Livro("Harry Potter e a Câmara Secreta", "J.K. Rowling", 56);
 
 $Livro3 = new Livro( "Harry Potter e o Prisioneiro de Askaban", "J.K. Rowling" , 3);
-
-$Livro1->verificarTitulo();
-
-$Livro2->verificarTitulo();
-
-$Livro3->verificarTitulo();
-
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -42,8 +35,11 @@ $Livro3->verificarTitulo();
            <b>Livro 1 :</b>
         </summary>
         <ul>
-            <li><b>Titulo:</b><?= $Livro1->titulo ?></li>
-            <li><b>Quantidade:</b><?= $Livro1->quantidade ?? "não tem quantidade"?></li>
+            <li><b>Titulo: </b><?= $Livro1->titulo ?></li>
+
+               <?=$Livro1->verificarTitulo();?>
+
+            <li><b>Quantidade: </b><?= $Livro1->quantidade ?? "número de quantidade não informado"?></li>
         </ul>
     </details>
 
@@ -56,8 +52,9 @@ $Livro3->verificarTitulo();
         </summary>
 
         <ul>
-            <li><b>Titulo:</b><?= $Livro2->titulo ?></li>
-            <li><b>Quantidade:</b><?= $Livro2->quantidade ?? "número de quantidade não informado"?></li>
+            <li><b>Titulo: </b><?= $Livro2->titulo ?></li>
+               <?=$Livro2->verificarTitulo();?> 
+            <li><b>Quantidade: </b><?= $Livro2->quantidade ?? " número de quantidade não informado"?></li>
         </ul>
     </details>
 
@@ -68,9 +65,10 @@ $Livro3->verificarTitulo();
         </summary>
 
         <ul>
-            <li><b>Titulo:</b><?= $Livro3->titulo ?></li>
+            <li><b>Titulo: </b><?= $Livro3->titulo ?></li>
         <!-- o ?? é como se fosse um if sozinho -->
-            <li><b>Quantidade:</b><?= $Livro3->quantidade  ?? "número de quantidade não informado"?></li>
+                <?=$Livro3->verificarTitulo();?> 
+            <li><b>Quantidade: </b><?= $Livro3->quantidade  ?? " número de quantidade não informado"?></li> 
         </ul>
     </details>
     <hr>

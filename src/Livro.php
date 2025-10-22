@@ -10,7 +10,7 @@ class Livro {
         $this->quantidade = $valorDaQuantidade;
 }  
     /* Usamos um if para, se houver páginas (ou seja, não for null), faremos aparecer o prágrafo com o dado. */
-    public function verificarTitulo(){
+    public function verificarTitulo():void{
         if (mb_strlen($this->titulo) < 3) {
             echo "<p style='color: red;'>Título não pode ter menos do que 3 letras</p>";
         } 
