@@ -37,7 +37,6 @@ $Livro3->quantidade = 3;
 
         <p><b>Livros Do Harry Potter</b></p>
 
-
     </header>
 
 
