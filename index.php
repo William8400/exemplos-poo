@@ -29,9 +29,9 @@ $clienteC = new Cliente("Jubião", 20, "jubião@gmail.com" , "11-9324-3452");
     <h3>Visualizando a estrutura dos objetos</h3>
 
     <div>
-        <h2><?=$clienteA->nome?></h2>
-        <h2><?=$clienteA->idade?> anos</h2>
-        <h2><?=$clienteA->email?></h2>
+        <h2><?=$clienteA->getNome()?></h2>
+        <h2><?=$clienteA->getIdade()?> anos</h2>
+        <h2><?=$clienteA->getEmail()?></h2>
     </div>
     
 </body>
