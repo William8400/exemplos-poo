@@ -2,9 +2,9 @@
 
 require_once "src/Livro.php";
 
-$Livro1 = new Livro();
+$Livro1 = new Livro("Harry Potter e a Pedra Filosofal", "J.K. Rowling", 7);
 
-$Livro2 = new Livro();
+$Livro2 = new Livro("Harry Potter e a Câmara Secreta", "J.K. Rowling", 8);
 
 $Livro3 = new Livro();
 
