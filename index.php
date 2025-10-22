@@ -7,7 +7,7 @@ $clienteA = new Cliente("jubilei", 18 , "jubilei@gmail.com");
 $clienteB = new Cliente("Jubão", 17, "jubão@gmail.com");
 
 // Neste objeto, passamos inclusive o telefone (que nos anteriores, foi opcional)
-$clienteC = new Cliente("Jubião", 20, "11-9324-3452");
+$clienteC = new Cliente("Jubião", 20, "jubião@gmail.com" , "11-9324-3452");
 
 ?>
 <!DOCTYPE html>
