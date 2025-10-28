@@ -45,7 +45,7 @@ class Livro {
         }
     }
 
-    public function setQuantidade(?int $valorQuantidade):void {
+    private function setQuantidade(?int $valorQuantidade):void {
 
         if ($valorQuantidade < 0) {
            echo "<p style='color:red'>Quantidade não pode ser negativa!</p>";
