@@ -2,12 +2,12 @@
 require_once "src/Cliente.php";
 
 // Criando um objeto e usando o método construtor para passar os dados 
-$clienteA = new Cliente("jubilei", 18 , "jubilei@gmail.com");
+$clienteA = new Cliente("Jubilei", 18 , "jubilei@gmail.com");
 
-$clienteB = new Cliente("Jubão", 17, "jubão@gmail.com");
+$clienteB = new Cliente("Jubão", 17, "jubao@gmail.com");
 
 // Neste objeto, passamos inclusive o telefone (que nos anteriores, foi opcional)
-$clienteC = new Cliente("Jubião", 20, "jubião@gmail.com" , "11-9324-3452");
+$clienteC = new Cliente("Jubião", 20, "jubiao@gmail.com" , "11-9324-3452");
 
 ?>
 <!DOCTYPE html>
@@ -32,7 +32,7 @@ $clienteC = new Cliente("Jubião", 20, "jubião@gmail.com" , "11-9324-3452");
         <p><b>Nome:</b> <?=$clienteA->getNome()?></p>
         <p><b>Idade:</b> <?=$clienteA->getIdade()?> anos</p>
         <p><b>Email:</b> <?=$clienteA->getEmail()?></p>
-        <p><b>Telefone: </b><?=$clienteA->getTelefone() ?? "Não informado"?></p>
+        <p><b>Telefone:</b> <?=$clienteA->getTelefone() ?? "Não informado"?></p>
 
     </div>
     
