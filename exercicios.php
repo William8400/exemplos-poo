@@ -34,7 +34,7 @@ $Livro3 = new Livro("Harry Potter e o Prisioneiro de Askaban", "J.K. Rowling", 3
         <details>
 
             <summary>
-                <b>Livro 1 :</b>
+                <b>Livro 1:</b>
             </summary>
             <ul>
                 <?= $Livro1->verificarTitulo(); ?>
@@ -46,7 +46,7 @@ $Livro3 = new Livro("Harry Potter e o Prisioneiro de Askaban", "J.K. Rowling", 3
         <details>
 
             <summary>
-                <b>Livro 2 :</b>
+                <b>Livro 2:</b>
             </summary>
 
             <ul>
@@ -57,7 +57,7 @@ $Livro3 = new Livro("Harry Potter e o Prisioneiro de Askaban", "J.K. Rowling", 3
         </details>
         <details>
             <summary>
-                <b>Livro 3 :</b>
+                <b>Livro 3:</b>
             </summary>
 
             <ul>
