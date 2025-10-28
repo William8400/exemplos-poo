@@ -28,51 +28,47 @@ $Livro3 = new Livro("Harry Potter e o Prisioneiro de Askaban", "J.K. Rowling", 3
 
 
     <hr>
+    <div class="container">
+        
+    
+        <details>
 
-    <details>
+            <summary>
+                <b>Livro 1 :</b>
+            </summary>
+            <ul>
+                <?= $Livro1->verificarTitulo(); ?>
 
-        <summary>
-            <b>Livro 1 :</b>
-        </summary>
-        <ul>
-            <?= $Livro1->verificarTitulo(); ?>
+                <li><b>Titulo: </b><?= $Livro1->titulo ?></li>
+                <li><b>Quantidade: </b><?= $Livro1->quantidade ?? "número de quantidade não informado" ?></li>
+            </ul>
+        </details>
+        <details>
 
-            <li><b>Titulo: </b><?= $Livro1->titulo ?></li>
-            <li><b>Quantidade: </b><?= $Livro1->quantidade ?? "número de quantidade não informado" ?></li>
-        </ul>
-    </details>
+            <summary>
+                <b>Livro 2 :</b>
+            </summary>
 
-    <hr>
+            <ul>
+                <?= $Livro2->verificarTitulo(); ?>
+                <li><b>Titulo: </b><?= $Livro2->titulo ?></li>
+                <li><b>Quantidade: </b><?= $Livro2->quantidade ?? " número de quantidade não informado" ?></li>
+            </ul>
+        </details>
+        <details>
+            <summary>
+                <b>Livro 3 :</b>
+            </summary>
 
-    <details>
+            <ul>
+                <?= $Livro3->verificarTitulo(); ?>
+                <li><b>Titulo: </b><?= $Livro3->titulo ?></li>
+                <!-- o ?? é como se fosse um if sozinho -->
+                <li><b>Quantidade: </b><?= $Livro3->quantidade  ?? " número de quantidade não informado" ?></li>
+            </ul>
+        </details>
 
-        <summary>
-            <b>Livro 2 :</b>
-        </summary>
-
-        <ul>
-            <?= $Livro2->verificarTitulo();?>
-            <li><b>Titulo: </b><?= $Livro2->titulo ?></li>
-            <li><b>Quantidade: </b><?= $Livro2->quantidade ?? " número de quantidade não informado" ?></li>
-        </ul>
-    </details>
-
-    <hr>
-    <details>
-        <summary>
-            <b>Livro 3 :</b>
-        </summary>
-
-        <ul>
-            <?= $Livro3->verificarTitulo();?>
-            <li><b>Titulo: </b><?= $Livro3->titulo ?></li>
-            <!-- o ?? é como se fosse um if sozinho -->
-            <li><b>Quantidade: </b><?= $Livro3->quantidade  ?? " número de quantidade não informado" ?></li>
-        </ul>
-    </details>
-    <hr>
-
-
+    </div>
 
 </body>
 
