@@ -36,4 +36,18 @@ class Cliente {
     public function getTelefone():?string {
         return $this->telefone; 
     }
+    /* ----------------------------------------------------------- */
+    
+    /* Métodos Setters: Permitem acesso de escrita para definir valores de acordo com alguma regra/validação. */
+    public function setNome(string $valorNome):void{
+        /* Se o nome estiver vazio */
+        if (empty($valorNome)) {
+            // Apresentamos uma mensagem alertando
+            echo "<p style='color:red'>Nome é Obrigatório!</p>";
+        } else {
+    
+        // Senão, pegamos o valor do nome e colocamos no atributo do objeto
+        $this->nome = $valorNome;
+        }  
+    }
 }
