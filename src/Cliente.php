@@ -32,4 +32,8 @@ class Cliente {
     public function getIdade():int{
         return $this->idade;
     }
+
+    public function getTelefone():?string {
+        return $this->telefone; 
+    }
 }
