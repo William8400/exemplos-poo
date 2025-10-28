@@ -15,5 +15,18 @@ class Livro {
             echo "<p style='color: red;'>Título não pode ter menos do que 3 letras</p>";
         } 
     } 
+
+    /* Criando os métodos getters para verificar os atributos */
+    public function getTitulo():string {
+        return $this->titulo;
+    }
+
+    public function getAutor():string {
+        return $this->autor;
+    }
+
+    public function getQuantidade():?int {
+        return $this->quantidade;
+    }
 }
 

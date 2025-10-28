@@ -38,8 +38,9 @@ $Livro3 = new Livro("Harry Potter e o Prisioneiro de Askaban", "J.K. Rowling", 3
         <ul>
             <?= $Livro1->verificarTitulo(); ?>
 
-            <li><b>Titulo: </b><?= $Livro1->titulo ?></li>
-            <li><b>Quantidade: </b><?= $Livro1->quantidade ?? "número de quantidade não informado" ?></li>
+            <li><b>Titulo: </b><?= $Livro1->getTitulo($Livro1); ?></li>
+            <li><b>Autor: </b><?= $Livro1->getAutor($Livro1); ?></li>
+            <li><b>Quantidade: </b><?= $Livro1->getQuantidade($Livro1) ?? "número de quantidade não informado" ?></li>
         </ul>
     </details>
     <hr>
@@ -51,8 +52,9 @@ $Livro3 = new Livro("Harry Potter e o Prisioneiro de Askaban", "J.K. Rowling", 3
 
         <ul>
             <?= $Livro2->verificarTitulo(); ?>
-            <li><b>Titulo: </b><?= $Livro2->titulo ?></li>
-            <li><b>Quantidade: </b><?= $Livro2->quantidade ?? " número de quantidade não informado" ?></li>
+            <li><b>Titulo: </b><?= $Livro2->getTitulo($Livro2) ?></li>
+            <li><b>Autor: </b><?= $Livro1->getAutor($Livro2); ?></li>
+            <li><b>Quantidade: </b><?= $Livro2->getQuantidade($Livro3) ?? " número de quantidade não informado" ?></li>
         </ul>
     </details>
     <hr>
@@ -63,8 +65,9 @@ $Livro3 = new Livro("Harry Potter e o Prisioneiro de Askaban", "J.K. Rowling", 3
 
         <ul>
             <?= $Livro3->verificarTitulo(); ?>
-            <li><b>Titulo: </b><?= $Livro3->titulo ?></li>
+            <li><b>Titulo: </b><?= $Livro3->getTitulo($Livro3) ?></li>
             <!-- o ?? é como se fosse um if sozinho -->
+             <li><b>Autor: </b><?= $Livro3->getAutor($Livro3); ?></li>
             <li><b>Quantidade: </b><?= $Livro3->quantidade  ?? " número de quantidade não informado" ?></li>
         </ul>
     </details>
